@@ -7,6 +7,8 @@ import java.util.Scanner;
 
 public class Solution {
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     // Complete the substrings function below.
     static int substrings(String n) {
         HashSet<String> subStrings = new HashSet<>();
@@ -35,8 +37,6 @@ public class Solution {
         }
         return l;
     }
-
-    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
         String n = scanner.nextLine();

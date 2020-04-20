@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Solution {
     static final int diff = 'a' - 'A';
+    private static final Scanner scanner = new Scanner(System.in);
 
     // Complete the abbreviation function below.
     static String abbreviation(String a, String b) {
@@ -51,11 +52,8 @@ public class Solution {
     }
 
     private static boolean matches(char a, char b) {
-        if (a == b || (a - diff) == b) return true;
-        else return false;
+        return a == b || (a - diff) == b;
     }
-
-    private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
         String a = "KXzQ";

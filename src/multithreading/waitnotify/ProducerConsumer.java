@@ -3,9 +3,9 @@ package multithreading.waitnotify;
 import java.util.LinkedList;
 
 public class ProducerConsumer {
+    final int LIMIT = 10;
     LinkedList<Integer> list = new LinkedList<>();
     Object lock = new Object();
-    final int LIMIT = 10;
     int item = 0;
 
     public void produce() throws InterruptedException {

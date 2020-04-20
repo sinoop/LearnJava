@@ -11,6 +11,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 class Solution {
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int A = 213;
+        System.out.println("s.solution(A) = " + s.solution(A));
+    }
+
     public int solution(int N) {
         //Initialize as 0
         String finalString = "0";
@@ -28,11 +34,5 @@ class Solution {
             finalString += ac;
         }
         return Integer.parseInt(finalString);
-    }
-
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        int A = 213;
-        System.out.println("s.solution(A) = " + s.solution(A));
     }
 }

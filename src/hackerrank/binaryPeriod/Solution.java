@@ -1,6 +1,12 @@
 package hackerrank.binaryPeriod;
 
 class Solution {
+    public static void main(String[] args) {
+        Solution s = new Solution();
+
+        System.out.println(s.solution(119));
+    }
+
     int solution(int n) {
         int[] d = new int[30];
         int l = 0;
@@ -24,11 +30,5 @@ class Solution {
             }
         }
         return -1;
-    }
-
-    public static void main(String[] args) {
-        Solution s = new Solution();
-
-        System.out.println(s.solution(119));
     }
 }

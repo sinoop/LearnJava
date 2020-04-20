@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 class Solution {
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int[] A = {1, 2, 3};
+        System.out.println("s.solution(A) = " + s.solution(A));
+    }
+
     public int solution(int[] A) {
         ArrayList<Integer> list = new ArrayList<>();
 
@@ -30,12 +36,6 @@ class Solution {
 
         }
         return prev + 1;
-    }
-
-    public static void main(String[] args) {
-        Solution s = new Solution();
-        int[] A = {1, 2, 3};
-        System.out.println("s.solution(A) = " + s.solution(A));
     }
 
 }

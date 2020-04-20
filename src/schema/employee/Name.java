@@ -2,6 +2,14 @@ package schema.employee;
 
 public class Name {
     private final String fname;
+    private final String mname;
+    private final String lname;
+
+    public Name(Builder b) {
+        this.fname = b.fname;
+        this.mname = b.mname;
+        this.lname = b.lname;
+    }
 
     @Override
     public String toString() {
@@ -10,15 +18,6 @@ public class Name {
                 ", mname='" + mname + '\'' +
                 ", lname='" + lname + '\'' +
                 '}';
-    }
-
-    private final String mname;
-    private final String lname;
-
-    public Name(Builder b) {
-        this.fname = b.fname;
-        this.mname = b.mname;
-        this.lname = b.lname;
     }
 
     public String getFname() {
