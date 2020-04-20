@@ -65,34 +65,36 @@ public class Address {
             this.houseName = houseName;
             return this;
         }
+
         public Builder aptNumber(String aptNumber) {
             this.aptNumber = aptNumber;
             return this;
         }
+
         public Builder streetName(String streetName) {
             this.streetName = streetName;
             return this;
         }
+
         public Builder city(String city) {
             this.city = city;
             return this;
         }
+
         public Builder state(String state) {
             this.state = state;
             return this;
         }
+
         public Builder country(String country) {
             this.country = country;
             return this;
         }
 
-        public Address build(){
+        public Address build() {
             return new Address(this);
         }
     }
-
-
-
 
 
 }

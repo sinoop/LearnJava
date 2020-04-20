@@ -11,26 +11,26 @@ public class Solution {
     static int substrings(String n) {
         HashSet<String> subStrings = new HashSet<>();
 
-        for(int i = 0; i < n.length() ; i ++){
+        for (int i = 0; i < n.length(); i++) {
             ArrayList<String> substrings = getSubStrings(n.substring(i));
-            for(String item : substrings){
+            for (String item : substrings) {
                 System.out.println(item);
                 subStrings.add(item);
             }
         }
 
         int sum = 0;
-        for(String element : subStrings){
-            sum+= Integer.parseInt(element);
+        for (String element : subStrings) {
+            sum += Integer.parseInt(element);
         }
 
         return sum;
     }
 
-    private static ArrayList<String> getSubStrings(String aString){
+    private static ArrayList<String> getSubStrings(String aString) {
         ArrayList<String> l = new ArrayList<>();
-        int stringLength = aString.length() ;
-        for(int i = 0 ; i < stringLength ; i ++){
+        int stringLength = aString.length();
+        for (int i = 0; i < stringLength; i++) {
             l.add(aString.substring(0, stringLength - i));
         }
         return l;

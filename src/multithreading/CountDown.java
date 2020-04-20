@@ -5,7 +5,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-class WorkerThread implements  Runnable{
+class WorkerThread implements Runnable {
     private CountDownLatch latch;
 
     public WorkerThread(CountDownLatch latch) {
@@ -27,14 +27,13 @@ public class CountDown {
         ExecutorService executor = Executors.newFixedThreadPool(10);
         CountDownLatch latch = new CountDownLatch(10);
 
-        for(int i = 0;i <10 ; i ++){
-            executor.submit(new com.sj.multithreading.test.WorkerThread(latch));
+        for (int i = 0; i < 10; i++) {
+            executor.submit(new WorkerThread(latch));
         }
         latch.await();
         System.out.println("Complete main");
 
     }
-
 
 
 }

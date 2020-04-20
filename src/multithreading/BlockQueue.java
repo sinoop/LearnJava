@@ -5,7 +5,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 public class BlockQueue {
-    static  BlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(10);
+    static BlockingQueue<Integer> queue = new ArrayBlockingQueue<Integer>(10);
 
     public static void main(String[] args) throws InterruptedException {
         Thread t1 = new Thread(() -> producer());
@@ -17,10 +17,10 @@ public class BlockQueue {
         t2.join();
     }
 
-    private static void producer(){
+    private static void producer() {
         Random rand = new Random();
 
-        while(true){
+        while (true) {
             try {
                 queue.put(rand.nextInt(100));
             } catch (InterruptedException e) {
@@ -28,11 +28,12 @@ public class BlockQueue {
             }
         }
     }
+
     private static void consumer() {
         Random rand = new Random();
 
-        while(true){
-            if(rand.nextInt(10) == 0){
+        while (true) {
+            if (rand.nextInt(10) == 0) {
                 try {
                     System.out.println("taken " + queue.take() + " ; Size : " + queue.size());
                 } catch (InterruptedException e) {

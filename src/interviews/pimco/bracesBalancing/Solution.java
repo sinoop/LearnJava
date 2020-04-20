@@ -1,6 +1,7 @@
 package interviews.pimco.bracesBalancing;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Stack;
 
 public class Solution {
 
@@ -16,10 +17,10 @@ public class Solution {
                 if (aChar == '{' || aChar == '(' || aChar == '[') {
                     bracesStack.push(aChar);
                 } else if (aChar == '}' || aChar == ')' || aChar == ']') {
-                    if(bracesStack.isEmpty()){
+                    if (bracesStack.isEmpty()) {
                         balancedFlag = false;
                         break;
-                    } else{
+                    } else {
                         char topChar = bracesStack.peek();
                         if ((topChar == '{' && aChar == '}') || (topChar == '(' && aChar == ')') || (topChar == '[' && aChar == ']')) {
                             bracesStack.pop();

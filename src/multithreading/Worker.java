@@ -5,7 +5,7 @@ public class Worker {
     private int count = 0;
 
     public static void main(String[] args) {
-        com.sj.multithreading.test.Worker worker = new com.sj.multithreading.test.Worker();
+        Worker worker = new Worker();
         worker.doWork();
     }
 
@@ -57,7 +57,8 @@ public class Worker {
         try {
             thread1.join();
             thread2.join();
-        } catch (InterruptedException ignored) {}
+        } catch (InterruptedException ignored) {
+        }
         System.out.println("Count is: " + count);
     }
 }

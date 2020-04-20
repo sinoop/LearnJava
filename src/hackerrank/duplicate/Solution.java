@@ -19,12 +19,12 @@ class Solution {
                 if (prev != list.get(i)) {
                     if ((prev + 1) != list.get(i)) {
                         return prev + 1;
-                    }else{
+                    } else {
                         prev = list.get(i);
                     }
                 } else
                     prev = list.get(i);
-                    continue;
+                continue;
             } else
                 return 1;
 
@@ -33,8 +33,8 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        com.sjenterprises.java.duplicate.Solution s = new com.sjenterprises.java.duplicate.Solution();
-        int[] A = {1,2,3};
+        Solution s = new Solution();
+        int[] A = {1, 2, 3};
         System.out.println("s.solution(A) = " + s.solution(A));
     }
 

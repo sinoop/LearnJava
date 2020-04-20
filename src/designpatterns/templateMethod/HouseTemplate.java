@@ -2,7 +2,7 @@ package designpatterns.templateMethod;
 
 public class HouseTemplate {
 
-    public final void buildHouse(){
+    public final void buildHouse() {
         buildWindows();
 
     }

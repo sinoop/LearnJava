@@ -1,7 +1,8 @@
 package interviews.pimco.matrix;
 
 import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 class Result {
@@ -14,7 +15,7 @@ class Result {
      */
 
     public static List<List<Integer>> findMatrix(List<List<Integer>> a) {
-        List<List<Integer>> b =  new ArrayList<>();
+        List<List<Integer>> b = new ArrayList<>();
 
         for (int i = 0; i < a.size(); i++) {
             List<Integer> aRowItems = new ArrayList<>();
@@ -24,14 +25,14 @@ class Result {
                 int sum = 0;
                 sum = a.get(i).get(j);
 
-                if(i-1 >= 0){
-                    sum += b.get(i-1).get(j);
+                if (i - 1 >= 0) {
+                    sum += b.get(i - 1).get(j);
                 }
-                if(j-1 >= 0){
-                    sum += b.get(i).get(j-1);
+                if (j - 1 >= 0) {
+                    sum += b.get(i).get(j - 1);
 
-                    if(i-1 >= 0 ){
-                        sum -= b.get(i-1).get(j-1);
+                    if (i - 1 >= 0) {
+                        sum -= b.get(i - 1).get(j - 1);
                     }
                 }
                 b.get(i).add(sum);

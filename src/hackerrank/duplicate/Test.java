@@ -21,7 +21,7 @@ public class Test {
 
         System.out.println(new Date());
 
-        ConcurrentHashMap<String,String> ab = new ConcurrentHashMap<>();
+        ConcurrentHashMap<String, String> ab = new ConcurrentHashMap<>();
 //        ab.put(null,"a");
 
 
@@ -29,7 +29,8 @@ public class Test {
         con.add("Asia");
         con.add("North America");
 
-        con.stream().forEach((n) -> {});
+        con.stream().forEach((n) -> {
+        });
 
 
         con.forEach(System.out::println);
@@ -46,12 +47,12 @@ public class Test {
 //        System.out.println(s.parse("01-02-1990"));
 
 
-        Consumer<String> cona = com.sjenterprises.java.duplicate.Test::accept;
+        Consumer<String> cona = Test::accept;
         cona.accept("Harry");
 
-        try{
+        try {
 //            System.out.println(c);
-        }catch (ArithmeticException | ArrayIndexOutOfBoundsException e){
+        } catch (ArithmeticException | ArrayIndexOutOfBoundsException e) {
             e.printStackTrace();
         }
 

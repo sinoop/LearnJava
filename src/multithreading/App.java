@@ -1,4 +1,5 @@
 package multithreading;
+
 import java.util.Scanner;
 
 class Processor extends Thread {
@@ -25,7 +26,7 @@ class Processor extends Thread {
 public class App {
 
     public static void main(String[] args) {
-    	Processor pro = new Processor();
+        Processor pro = new Processor();
         pro.start();
         // Wait for the enter key
         System.out.println("Enter something to stop the thread,\nVolatile variable running will be forced to true :");

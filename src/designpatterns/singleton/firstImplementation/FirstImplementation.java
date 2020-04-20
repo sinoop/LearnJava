@@ -7,8 +7,8 @@ public class FirstImplementation {
 
     }
 
-    public static FirstImplementation getInstance(){
-        if(instance == null){
+    public static FirstImplementation getInstance() {
+        if (instance == null) {
             instance = new FirstImplementation();
         }
         return instance;

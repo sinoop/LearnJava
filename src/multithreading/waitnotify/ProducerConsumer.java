@@ -11,7 +11,7 @@ public class ProducerConsumer {
     public void produce() throws InterruptedException {
         while (true) {
             synchronized (lock) {
-                while(list.size() == LIMIT){
+                while (list.size() == LIMIT) {
                     lock.wait();
                 }
                 list.add(item++);
@@ -23,7 +23,7 @@ public class ProducerConsumer {
     public void consume() throws InterruptedException {
         while (true) {
             synchronized (lock) {
-                while(list.size() == 0){
+                while (list.size() == 0) {
                     lock.wait();
                 }
                 System.out.print("Cosuming ");

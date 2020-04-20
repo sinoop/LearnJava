@@ -1,7 +1,7 @@
 package schema.parkinglot;
 
-import model.parkinglot.vehicle.Car;
-import model.parkinglot.vehicle.VehicleSize;
+import schema.parkinglot.vehicle.Car;
+import schema.parkinglot.vehicle.VehicleSize;
 
 public class ParkingSlot {
     private int floor;

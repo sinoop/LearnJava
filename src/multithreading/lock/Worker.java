@@ -10,7 +10,7 @@ public class Worker implements Runnable {
 
     @Override
     public void run() {
-        synchronized (appLock){
+        synchronized (appLock) {
             count++;
             System.out.println("Thread -" + Thread.currentThread().getName() + " Counter : " + count);
         }

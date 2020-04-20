@@ -2,7 +2,7 @@ package designpatterns.singleton.firstImplementation;
 
 import java.util.Random;
 
-public class ThreadClient implements Runnable{
+public class ThreadClient implements Runnable {
     FirstImplementation instanceVariable;
 
     public ThreadClient(FirstImplementation instanceVariable) {
@@ -18,6 +18,6 @@ public class ThreadClient implements Runnable{
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        System.out.println(Thread.currentThread().getName() + " - Finished" );
+        System.out.println(Thread.currentThread().getName() + " - Finished");
     }
 }

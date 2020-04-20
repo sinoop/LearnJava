@@ -10,7 +10,7 @@ class Solution {
             n /= 2;
             l++;
         }
-        for (p = 1; p < 1 + l/2; ++p) {
+        for (p = 1; p < 1 + l / 2; ++p) {
             int i;
             boolean ok = true;
             for (i = 0; i < l - p; ++i) {
@@ -29,6 +29,6 @@ class Solution {
     public static void main(String[] args) {
         Solution s = new Solution();
 
-        System.out.println(s.solution(119 ));
+        System.out.println(s.solution(119));
     }
 }

@@ -1,12 +1,7 @@
 package hackerrank.abbreviation;
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.io.IOException;
+import java.util.Scanner;
 
 public class Solution {
     static final int diff = 'a' - 'A';
@@ -24,13 +19,13 @@ public class Solution {
                 exitFlag = true;
                 break;
             }
-            while ( i < firstStringArray.length && j < secondStringArray.length) {
+            while (i < firstStringArray.length && j < secondStringArray.length) {
                 // If chars are same, continue
-                if(matches(firstStringArray[i] ,secondStringArray[j])){
+                if (matches(firstStringArray[i], secondStringArray[j])) {
                     System.out.println("matched " + firstStringArray[i] + " with " + secondStringArray[j]);
                     i++;
                     j++;
-                } else if (firstStringArray[i] >= 'a' && firstStringArray[i] <= 'z' ){
+                } else if (firstStringArray[i] >= 'a' && firstStringArray[i] <= 'z') {
                     System.out.println("skipped " + firstStringArray[i]);
                     i++;
                 } else {
@@ -40,24 +35,23 @@ public class Solution {
             }
         }
 
-        if(j == secondStringArray.length && matches(firstStringArray[i-1] ,secondStringArray[j-1]) && i < firstStringArray.length ){
-            while(i < firstStringArray.length && firstStringArray[i] >= 'a' && firstStringArray[i] <= 'z' ){
+        if (j == secondStringArray.length && matches(firstStringArray[i - 1], secondStringArray[j - 1]) && i < firstStringArray.length) {
+            while (i < firstStringArray.length && firstStringArray[i] >= 'a' && firstStringArray[i] <= 'z') {
                 System.out.println("skipped " + firstStringArray[i]);
                 i++;
             }
         }
 
 
-
-        if (i == firstStringArray.length && j == secondStringArray.length ) return "YES";
+        if (i == firstStringArray.length && j == secondStringArray.length) return "YES";
 //        if(j == secondStringArray.length && i<firstStringArray.length && firstStringArray[i-1] == secondStringArray[j-1]) return "YES";
 
         return "NO";
 
     }
 
-    private static boolean matches(char a , char b){
-        if(a == b || (a - diff) == b) return true;
+    private static boolean matches(char a, char b) {
+        if (a == b || (a - diff) == b) return true;
         else return false;
     }
 

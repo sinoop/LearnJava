@@ -1,6 +1,6 @@
 package schema.parkinglot;
 
-import model.parkinglot.vehicle.Vehicle;
+import schema.parkinglot.vehicle.Vehicle;
 
 public class ParkingLot {
     private String name;

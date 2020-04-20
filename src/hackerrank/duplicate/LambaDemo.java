@@ -7,11 +7,11 @@ public class LambaDemo {
     }
 
     private static void printMyname(String name) {
-        name = name+"Nelson";
-        Runnable r = () ->{
+        name = name + "Nelson";
+        Runnable r = () -> {
             try {
                 Thread.sleep(100);
-            } catch (Exception e){
+            } catch (Exception e) {
                 e.printStackTrace();
             }
 //            System.out.println("Welcome:"+name);

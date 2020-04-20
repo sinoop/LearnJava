@@ -10,6 +10,6 @@ public class BreakUsingReflection {
         Constructor<FirstImplementation> c = FirstImplementation.class.getDeclaredConstructor();
         c.setAccessible(true);
         instanceUsingReflection = (FirstImplementation) c.newInstance();
-        System.out.println(f.hashCode() + " - " + instanceUsingReflection.hashCode());        
+        System.out.println(f.hashCode() + " - " + instanceUsingReflection.hashCode());
     }
 }
