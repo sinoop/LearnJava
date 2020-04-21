@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.countdownlatch;
 
 
 import java.util.concurrent.CountDownLatch;
@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 class WorkerThread implements Runnable {
-    private CountDownLatch latch;
+    private final CountDownLatch latch;
 
     public WorkerThread(CountDownLatch latch) {
         this.latch = latch;

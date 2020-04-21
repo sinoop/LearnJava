@@ -1,0 +1,4 @@
+- When to use count down latch
+- Why do you use countdown latch over a Thread created in a for loop and wait for it to complete
+https://www.javamex.com/tutorials/threads/CountDownLatch.shtml
+
