@@ -1,0 +1,39 @@
+- Tree
+    - A Collection of entities - "Nodes" connected by "Edges"
+    - Each Node can contain value and it may or may not have a child node
+    - Leaf nodes
+        Nodes without childres
+
+Terminology summary
+    Root is the topmost node of the tree
+    Edge is the link between two nodes
+    Child is a node that has a parent node
+    Parent is a node that has an edge to a child node
+    Leaf is a node that does not have a child node in the tree
+    Height is the length of the longest path to a leaf
+    Depth is the length of the path to its root
+
+- Height of tree
+    - Empty tree = -1
+    - Single node = 0
+
+- Depth of a Tree
+    length of the path to the root
+
+
+- Differernt Types of Tree
+    - Binary Tree
+    - Sorted Binary Tree
+    - AVL
+        - Always rotate for an insertion
+    - red black tree
+        - max rotations is 2
+
+
+Tree Traversal :
+    DFS:
+        is an algorithm for traversing or searching tree data structure.
+        One starts at the root and explores as far as possible along each branch before backtracking.
+
+    BFS:
+
