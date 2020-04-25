@@ -29,12 +29,13 @@ Terminology summary
     - red black tree
         - max rotations is 2
 
-
+````
                   1
                /     \
              2         5
            /   \      /   \
           3     4    6      7
+````          
 Tree Traversal :
     DFS :
         is an algorithm for traversing or searching tree data structure.
