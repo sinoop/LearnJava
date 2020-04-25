@@ -1,4 +1,4 @@
-package multithreading.waitnotify;
+package multithreading.threadmanagement.waitnotify;
 
 import java.util.LinkedList;
 

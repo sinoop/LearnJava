@@ -1,4 +1,4 @@
-package multithreading.lock;
+package multithreading.threadmanagement.lock;
 
 import java.util.stream.IntStream;
 

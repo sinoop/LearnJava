@@ -1,4 +1,4 @@
-package multithreading.lock;
+package multithreading.threadmanagement.lock;
 
 public class Worker implements Runnable {
     static Object appLock = new Object();

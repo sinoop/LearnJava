@@ -3,3 +3,4 @@
 https://www.javamex.com/tutorials/threads/CountDownLatch.shtml
 
 - What is the difference between cyclic barrier and count down latch
+https://stackoverflow.com/questions/10156191/real-life-examples-for-countdownlatch-and-cyclicbarrier

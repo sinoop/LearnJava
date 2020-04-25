@@ -1,4 +1,4 @@
-package multithreading.waitnotify;
+package multithreading.threadmanagement.waitnotify;
 
 public class MainProducerConsumer {
     public static void main(String[] args) throws InterruptedException {

@@ -1,5 +1,0 @@
-Like handling out a licence
-
-- Service capability is 3
-- It issues 5 permits
-- If all permits are gone,
