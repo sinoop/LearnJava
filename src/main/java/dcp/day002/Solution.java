@@ -1,6 +1,6 @@
 package dcp.day002;
 
-/**
+/*
  * Problem #2
  * This problem was asked by Uber.
  * <p>
@@ -9,14 +9,17 @@ package dcp.day002;
  * For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24]. If our input was [3, 2, 1], the expected output would be [2, 3, 6].
  * <p>
  * Follow-up: what if you can't use division?
- **/
-public class Solution {
-    public static void main(String[] args) {
-        int[] input = {1, 2, 3, 4, 5};
-
-        for (int number : input) {
-
-        }
-
-    }
-}
+ *
+ * */
+//public class Solution {
+//    public static void main(String[] args) {
+//        int[] input = {1, 2, 3, 4, 5};
+//        int product = 1;
+//        for (int number : input)
+//            product = product * number;
+//
+//        for (int number : input) {
+//
+//        }
+//    }
+//}
